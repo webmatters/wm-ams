@@ -13,7 +13,7 @@
         action="/success/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        class="mb-12"
+        class="mb-12 text-secondary"
       >
         <div class="flex flex-wrap mb-6 -mx-4">
           <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">

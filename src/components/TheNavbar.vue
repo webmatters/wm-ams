@@ -1,8 +1,6 @@
 `<template>
   <header class="bg-white">
-    <div
-      class="container mx-auto p-4 md:flex md:justify-between md:items-center "
-    >
+    <div class="container mx-auto p-4 md:flex md:justify-between md:items-center">
       <!-- Brand Logo -->
       <div>
         <a
@@ -12,17 +10,11 @@
             el: '#top',
             offset: -153,
           }"
-          ><g-image
-            src="~/assets/img/brand.svg"
-            alt="Web Matters logo"
-            class="w-full"
-        /></a>
+        >
+          <g-image src="~/assets/img/brand.svg" alt="Web Matters logo" class="w-full" />
+        </a>
         <g-link v-else to="/">
-          <g-image
-            src="~/assets/img/brand.svg"
-            alt="Web Matters logo"
-            class="w-full"
-          />
+          <g-image src="~/assets/img/brand.svg" alt="Web Matters logo" class="w-full" />
         </g-link>
       </div>
       <!-- Email address -->
@@ -40,14 +32,12 @@
           href="/#contact"
           v-scroll-to="'#contact'"
           class="block btn-grad text-center rounded-full text-white py-2 px-4 md:ml-6 mt-3 md:mt-0 uppercase"
-          >Free Strategy Session</a
-        >
+        >Free Strategy Session</a>
         <g-link
           v-else
           to="/#contact"
           class="block btn-grad text-center rounded-full text-white py-2 px-4 md:ml-6 mt-3 md:mt-0 uppercase"
-          >Free Strategy Session</g-link
-        >
+        >Free Strategy Session</g-link>
       </div>
     </div>
     <!-- End pre-Navbar section -->
@@ -69,9 +59,7 @@
     <!-- End Mobile Menu Toggler -->
 
     <div class="md:bg-secondary">
-      <div
-        class="container mx-auto px-4 md:flex md:items-center md:justify-between"
-      >
+      <div class="container mx-auto px-4 md:flex md:items-center md:justify-between">
         <ul
           :class="isOpen ? 'block' : 'hidden'"
           class="md:flex md:items-center p-4 md:px-0 text-secondary md:text-gray-300 text-lg"
@@ -85,14 +73,12 @@
                 offset: -153,
               }"
               class="nav-link md:hover:text-white md:mt-0"
-              >Services</a
-            >
+            >Services</a>
             <g-link
               v-else
               to="/#services"
               class="nav-link hover:text-primary md:hover:text-white md:mt-0"
-              >Services</g-link
-            >
+            >Services</g-link>
           </li>
           <li class="mt-2">
             <a
@@ -103,21 +89,18 @@
                 offset: -153,
               }"
               class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
-              >About</a
-            >
+            >About</a>
             <g-link
               v-else
               to="/#about"
               class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
-              >About</g-link
-            >
+            >About</g-link>
           </li>
           <li class="mt-2">
             <g-link
               to="/blog"
               class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
-              >Blog</g-link
-            >
+            >Blog</g-link>
           </li>
           <li class="mt-2">
             <a
@@ -125,14 +108,12 @@
               href="/#contact"
               v-scroll-to="'#contact'"
               class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
-              >Contact</a
-            >
+            >Contact</a>
             <g-link
               v-else
               to="/#contact"
               class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
-              >Contact</g-link
-            >
+            >Contact</g-link>
           </li>
         </ul>
         <search-input
